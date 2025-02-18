@@ -1,0 +1,13 @@
+{
+  "request" : {
+    "urlPath" : "/com.github.mkay.HelloService/GetHello",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"message\": \"from GRPC!\"\n}",
+    "headers" : {
+      "grpc-status-name" : "OK"
+    }
+  }
+}

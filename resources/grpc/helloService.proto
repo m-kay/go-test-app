@@ -1,0 +1,12 @@
+import "google/protobuf/empty.proto";
+package com.github.mkay;
+
+option go_package = "github.com/m-kay/test-app/src/service";
+
+service HelloService {
+  rpc GetHello(google.protobuf.Empty) returns (HelloResponse);
+}
+
+message HelloResponse {
+  required string message = 1;
+}
