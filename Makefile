@@ -9,3 +9,7 @@ test: build
 	go test ./src/...
 generate:
 	go generate ./src/...
+clean:
+	rm -f app
+	find . -name '*.pb.go' -delete
+	find . -name '*.dsc' -delete
